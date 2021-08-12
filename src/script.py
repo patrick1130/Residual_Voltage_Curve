@@ -1,6 +1,4 @@
 import pandas as pd
-import xlwt  # 处理.xls
-import openpyxl  # 处理.xlsx
 
 df = pd.read_excel('../data/data.xls')
 # print(df.head())
@@ -11,4 +9,6 @@ df = pd.read_excel('../data/data.xls')
 # 使用loc获取列子集
 #subset = df.loc[:,[]]
 
-print(df.iloc[6:12,1:11])
+#print(df.iloc[6:12,1:11])
+
+scatter_plot
