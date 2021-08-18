@@ -16,7 +16,7 @@ df1.columns = ['0.1c','c.1v','0.2c','0.2v','0.5c','0.5v','1c','1v','2c','2v']
 # 使用loc获取列子集
 #subset = df.loc[:,[]]
 df1.to_csv('../output/data.csv', index=False)
-df2 = pd.read_csv('../output/data.csv')
+df2 = pd.read_csv('../output/data.csv',keep_default_na=False)
 print(df2)
 #print(pd.read_csv('../output/data.csv',keep_default_na=False))
 
