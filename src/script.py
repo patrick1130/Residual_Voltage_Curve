@@ -46,6 +46,7 @@ zz = zz.astype(float)
 # print(zz.dtypes)
 x = zz['current']
 y = zz['voltage']
+
 # print(zz)
 # currents = sns.load_dataset('tips')
 # print(currents.head())
@@ -79,13 +80,14 @@ plt.show()
 # x=results.params['current']
 # y=results.params['Intercept']
 
-
+'''
 # np.polyfit(x,y,deg=1) 返回多项式系数
-# z = np.polyfit(x,y, 2)
-# a = np.poly1d(z)  # 生成方程式
-# plt.plot(x, a(x))  # 拟合曲线
+z = np.polyfit(x, y, deg=2)
+a = np.poly1d(z)  # 生成方程式
+plt.plot(x, a(x))  # 拟合曲线
 
 plt.scatter(x, y)
 
 plt.legend()
 plt.show()
+'''
