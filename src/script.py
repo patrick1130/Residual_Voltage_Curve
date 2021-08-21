@@ -80,14 +80,14 @@ plt.show()
 # x=results.params['current']
 # y=results.params['Intercept']
 
-'''
+
 # np.polyfit(x,y,deg=1) 返回多项式系数
 z = np.polyfit(x, y, deg=2)
 a = np.poly1d(z)  # 生成方程式
-plt.plot(x, a(x))  # 拟合曲线
+plt.plot(x, a(x),"r--")  # 拟合曲线
 
 plt.scatter(x, y)
 
+print("y=%.6fx\u00B2+%.6fx+%.6f"%(z[0],z[1],z[2]))#'\u00B2'代表 2（上标）
 plt.legend()
 plt.show()
-'''
