@@ -60,27 +60,13 @@ ax = fig.add_subplot(111)
 ax.scatter(x,y)
 ax.plot(x,y_pred)
 plt.show()
-'''
 
 # print(results.summary())#回归结果
-
 # print(results.params)#回归系数
+'''
 
 
-# print(dd1)
-# print(dd2)
-# df1.columns = ['1c','1v','2c','2v','3c','3v','4c','4v','5c','5v'
-
-# current_concat.to_csv('../output/data.csv', index=False)
-# df2 = pd.read_csv('../output/data.csv',keep_default_na=False)
-# print(df2)
-# print(pd.read_csv('../output/data.csv',keep_default_na=False))
-# x=np.linspace(0.05,10,1000)
-# y=np.random.rand(1000)
-# x=results.params['current']
-# y=results.params['Intercept']
-
-
+#最小二乘法多项式回归
 # np.polyfit(x,y,deg=1) 返回多项式系数
 z = np.polyfit(x, y, deg=2)
 a = np.poly1d(z)  # 生成方程式
